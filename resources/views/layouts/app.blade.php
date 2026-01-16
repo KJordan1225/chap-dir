@@ -3,7 +3,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <title>{{ config('app.name', 'Laravel CRM') }}</title>
+    <title>{{ config('app.name', 'Laravel Chapter Directory') }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -13,7 +13,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <div class="container">
         <a class="navbar-brand" href="{{ route('dashboard') }}">
-            {{ config('app.name', 'Laravel CRM') }}
+            {{ config('app.name', 'Laravel Chapter Directory') }}
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,14 +29,8 @@
                         <a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('contacts.index') }}">Contacts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('companies.index') }}">Companies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('deals.pipeline') }}">Pipeline</a>
-                    </li>
+                        <a class="nav-link" href="{{ route('members.index') }}">Members</a>
+                    </li>                 
                 @endauth
             </ul>
 
