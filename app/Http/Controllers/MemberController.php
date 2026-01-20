@@ -8,11 +8,11 @@ use Illuminate\Support\Facades\Storage;
 
 class MemberController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-        $this->authorizeResource(Member::class, 'member');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    //     $this->authorizeResource(Member::class, 'member');
+    // }
 
     public function index(Request $request)
     {
